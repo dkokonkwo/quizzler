@@ -8,6 +8,7 @@ import LoadingThreeDotsJumping from "./Loader";
 import { Button, Modal, Alert } from "react-bootstrap";
 import GameOver from "./GameOver";
 import Congratulations from "./Congratulations";
+import { trivia_categories } from "./TriviaDB";
 
 const lives = { easy: 5, medium: 3, hard: 3, random: 4 };
 const letters = ["A", "B", "C", "D"];
@@ -25,6 +26,8 @@ function MyQuestions() {
   const [options, setOptions] = useState([]);
   const [finished, setFinished] = useState(false);
 
+  const cat = trivia_categories.find((item) => item.id === params.category);
+
   useEffect(() => {
     if (!params.category || !params.difficulty) return;
 
@@ -39,7 +42,7 @@ function MyQuestions() {
 
         const result = await response.json();
 
-        console.log("Response: ", result);
+        // console.log("Response: ", result);
 
         if (!result || !Array.isArray(result.results)) {
           throw new Error(
@@ -132,7 +135,7 @@ function MyQuestions() {
             </Modal>
           )}
           <div className="questions-heading">
-            <h4 className="cat">{params.category.toLocaleUpperCase()}</h4>
+            <h4 className="cat">{cat.name}</h4>
             <div className="question-difficulty">
               <h4>{params.difficulty.toLocaleUpperCase()}</h4>
               <div className="lives-container">
@@ -180,7 +183,7 @@ function MyQuestions() {
       ) : !numLives && !finished ? (
         <GameOver />
       ) : (
-        <Congratulations />
+        <Congratulations score={score} />
       )}
     </>
   );

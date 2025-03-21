@@ -5,8 +5,7 @@ import { Button } from "react-bootstrap";
 import { Cup } from "iconsax-react";
 import "../styles/minor.css";
 
-const Congratulations = () => {
-  const score = 45;
+const Congratulations = (score) => {
 
   return (
     <div className="gameover-container">

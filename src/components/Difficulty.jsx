@@ -6,6 +6,7 @@ import diff from "../assets/images/diff.png";
 import { Award, Teacher, Shuffle } from "iconsax-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSplotch } from "@fortawesome/free-solid-svg-icons";
+import { trivia_categories } from "./TriviaDB";
 
 const difficulties = ["Easy", "Medium", "Hard", "Random"];
 
@@ -20,11 +21,13 @@ const lives = [5, 3, 3, 4];
 
 function Difficulty() {
   const params = useParams();
-  console.log(params);
+  // console.log(params);
+
+  const cat = trivia_categories.find((item) => item.id === params.category);
   return (
     <div className="difficulties-container">
       <h3>Difficulty</h3>
-      <h4 className="params">{params.category}</h4>
+      <h4 className="params">{cat.name}</h4>
       <div className="difficulties-card">
         {difficulties.map((difficulty, index) => (
           <Link
