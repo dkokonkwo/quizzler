@@ -11,7 +11,7 @@ function NotFound() {
         <p className="notfound-message">
           Oops! The page you're looking for doesn't exist.
         </p>
-        <Link to={`/`}>
+        <Link to={`/quizzler`}>
           <Button className="notfound-button">Go Back Home</Button>
         </Link>
       </div>

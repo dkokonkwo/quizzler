@@ -10,10 +10,10 @@ function GameOver() {
         <h1 className="gameover-title">Game Over</h1>
         <p className="gameover-message">Better luck next time! 🎮</p>
         <div className="gameover-buttons">
-          <Link to={`/play`}>
+          <Link to={`/quizzler/play`}>
             <Button className="gameover-button">Play Again</Button>
           </Link>
-          <Link to={`/`}>
+          <Link to={`/quizzler`}>
             <Button className="gameover-button">Go to Home</Button>
           </Link>
         </div>

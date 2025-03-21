@@ -33,7 +33,7 @@ function MyNavbar() {
           <Nav className="me-auto"></Nav>
           <Nav className="right-links">
             <NavLink
-              to={"/"}
+              to={"/quizzler"}
               className={({ isActive }) => {
                 return isActive
                   ? "active-link top-link nav-link"
@@ -44,7 +44,7 @@ function MyNavbar() {
               Home
             </NavLink>
             <NavLink
-              to={"/play"}
+              to={"/quizzler/play"}
               className={({ isActive }) => {
                 return isActive
                   ? "active-link top-link nav-link"
@@ -55,7 +55,7 @@ function MyNavbar() {
               Play
             </NavLink>
             <NavLink
-              to={"/about"}
+              to={"/quizzler/about"}
               className={({ isActive }) => {
                 return isActive
                   ? "active-link top-link nav-link"

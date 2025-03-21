@@ -14,10 +14,10 @@ const Congratulations = (score) => {
         <Cup size="32" color="#d9e3f0" variant="Bold" className="rocket" />
         <p className="gameover-message">You scored {score} points!🎮</p>
         <div className="gameover-buttons">
-          <Link to={`/play`}>
+          <Link to={`/quizzler/play`}>
             <Button className="gameover-button"> 🔄 Play Again</Button>
           </Link>
-          <Link to={`/`}>
+          <Link to={`/quizzler`}>
             <Button className="gameover-button">🏠 Go Home</Button>
           </Link>
         </div>

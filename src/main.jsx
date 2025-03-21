@@ -13,28 +13,28 @@ import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/quizzler",
     element: <App />,
-    errorElement: <NotFound/>,
+    errorElement: <NotFound />,
     children: [
       {
-        path: "/",
+        path: "/quizzler",
         element: <MyHome />,
       },
       {
-        path: "/play",
+        path: "/quizzler/play",
         element: <Play />,
       },
       {
-        path: "/about",
+        path: "/quizzler/about",
         element: <About />,
       },
       {
-        path: "/play/:category",
+        path: "/quizzler/play/:category",
         element: <Difficulty />,
       },
       {
-        path: "/play/:category/:difficulty",
+        path: "/quizzler/play/:category/:difficulty",
         element: <MyQuestions />,
       },
     ],
