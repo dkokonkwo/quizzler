@@ -23,7 +23,9 @@ function Difficulty() {
   const params = useParams();
   // console.log(params);
 
-  const cat = trivia_categories.find((item) => item.id === params.category);
+  const cat = trivia_categories.find(
+    (item) => item.id === parseInt(params.category, 10)
+  );
   return (
     <div className="difficulties-container">
       <h3>Difficulty</h3>

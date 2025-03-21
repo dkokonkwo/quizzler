@@ -26,7 +26,7 @@ function MyQuestions() {
   const [options, setOptions] = useState([]);
   const [finished, setFinished] = useState(false);
 
-  const cat = trivia_categories.find((item) => item.id === params.category);
+  const cat = trivia_categories.find((item) => item.id === parseInt(params.category, 10));
 
   useEffect(() => {
     if (!params.category || !params.difficulty) return;
