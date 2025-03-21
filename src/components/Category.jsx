@@ -28,7 +28,11 @@ function QuestionCategories() {
       <h3>Browse Categories</h3>
       <div className="categories-card">
         {trivia_categories.map((cat, index) => (
-          <Link key={index} to={`/play/${cat.id}`} className="category-link">
+          <Link
+            key={index}
+            to={`/quizzler/play/${cat.id}`}
+            className="category-link"
+          >
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}

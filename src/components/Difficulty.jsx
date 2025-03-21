@@ -34,7 +34,7 @@ function Difficulty() {
         {difficulties.map((difficulty, index) => (
           <Link
             key={difficulty}
-            to={`/play/${params.category}/${difficulty.toLowerCase()}`}
+            to={`/quizzler/play/${params.category}/${difficulty.toLowerCase()}`}
             className="difficulty-link"
           >
             <div key={difficulty} className="diff-card">

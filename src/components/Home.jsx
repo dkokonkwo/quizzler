@@ -46,7 +46,7 @@ function MyHome() {
         <HomeCarousel />
       </div>
       <div className="home-card">
-        <Link to={"/play"} className="play-linker">
+        <Link to={"/quizzler/play"} className="play-linker">
           <Button className="home-play-btn">
             <FontAwesomeIcon icon={faRocket} className="rocket" />
             <p>Play!</p>
