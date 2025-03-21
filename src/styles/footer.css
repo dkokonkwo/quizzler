@@ -1,0 +1,131 @@
+.footer {
+  margin-top: 10vh;
+  width: 100%;
+  min-height: 35vh;
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vw;
+}
+
+.footer-links {
+  min-height: 60%;
+  display: flex;
+  align-items: start;
+  gap: 8vw;
+  margin-inline: auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: end;
+}
+
+.footer-logo h5 {
+  margin-left: 0.5rem;
+}
+
+.footer-links h5 {
+  font-family: "Space Mono", monospace;
+  font-size: 1.38rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0;
+}
+
+.footer-links p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--secondary-text);
+}
+
+.copyright {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-inline: auto;
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid var(--secondary-text);
+  color: var(--secondary-text);
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+}
+
+.copyright p {
+  margin: 0;
+  margin-top: auto;
+  font-size: 0.8rem;
+}
+
+.marketplace,
+.explore,
+.sign-up {
+  margin-inline: auto;
+}
+
+.footer-logo,
+.explore h5,
+.sign-up h5 {
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials .media {
+  font-size: 25px;
+  color: var(--secondary-text);
+}
+
+.media:hover {
+  color: var(--white);
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.explore a {
+  color: var(--secondary-text);
+  font-size: 0.8rem;
+  font-weight: normal;
+  transition: color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.explore a:hover {
+  color: var(--white);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .footer-links {
+    gap: 4vw;
+    margin: 1vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    margin-top: 12vh;
+  }
+
+  .footer-links {
+    min-height: 60%;
+    flex-direction: column;
+    gap: 5vw;
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .marketplace,
+  .explore,
+  .sign-up {
+    margin-inline: 0;
+  }
+}

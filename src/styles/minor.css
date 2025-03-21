@@ -1,0 +1,138 @@
+/* ------404 NOT FOUND CSS------- */
+
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.notfound-content {
+  text-align: center;
+  background-color: var(--bg-secondary);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.notfound-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--main-accent);
+}
+
+.notfound-message {
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin: 20px 0;
+}
+
+.notfound-button {
+  padding: 12px 25px;
+  background-color: var(--main-accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: ease-in-out 0.3s;
+}
+
+.notfound-button:hover {
+  transform: scale(1.1);
+  background-color: var(--white);
+  color: var(--main-accent);
+}
+
+/* ----GAME OVER CSS */
+
+.gameover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.gameover-content {
+  text-align: center;
+  background-color: var(--bg-secondary);
+  padding: 50px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gameover-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--main-accent);
+}
+
+.gameover-message {
+  font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  color: var(--white);
+}
+
+.gameover-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gameover-button {
+  padding: 15px 30px;
+  background-color: var(--white);
+  color: var(--main-accent);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.gameover-button:hover {
+  background-color: var(--main-accent);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.extra {
+  font-size: 3rem;
+}
+
+@media (max-width: 650px) {
+  .notfound-content {
+    padding: 5vw;
+    border-radius: 1rem;
+  }
+
+  .notfound-title {
+    font-size: 4rem;
+  }
+
+  .gameover-container {
+    height: 50vh;
+  }
+
+  .gameover-content {
+    padding: 12vw;
+  }
+
+  .gameover-title {
+    font-size: 3rem;
+  }
+
+  .gameover-message {
+    font-size: 1rem;
+  }
+
+  .gameover-button {
+    padding: 10px 22px;
+    font-size: 1rem;
+  }
+}

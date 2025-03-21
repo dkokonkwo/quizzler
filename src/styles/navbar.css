@@ -1,0 +1,75 @@
+.navbar {
+  background: transparent !important;
+  height: 10vh;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo h2 {
+  margin: 0;
+  margin-left: 1rem;
+  color: var(--white);
+  font-family: "Space Mono", monospace;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 2px;
+}
+
+.right-links {
+  margin: 0;
+  height: 100%;
+}
+
+.active-link {
+  color: var(--main-accent) !important;
+  border-bottom: 2px solid var(--main-accent);
+}
+
+.nav-link {
+  color: var(--white);
+  font-family: "Work Sans", sans-serif !important;
+  margin-inline: 1rem;
+  transition: ease-in-out 0.4s;
+}
+
+.top-link {
+  color: var(--white);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: ease-in-out 0.4s;
+}
+
+.top-link:hover {
+  color: var(--main-accent);
+  transition: ease-in-out 0.4s;
+}
+
+.top-link:hover {
+  border-bottom: 2px solid var(--main-accent);
+}
+
+/* NAVBAR TOGGLE ICON */
+@media (max-width: 996px) {
+  .navbar-collapse {
+    background-color: var(--bg-secondary);
+    z-index: 999;
+    border-radius: 0px 0px 1rem 1rem;
+  }
+
+  .active-link {
+    border-bottom: none;
+  }
+}
+
+.tg-icon {
+  border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: none; /* Removes any box-shadow or border effect */
+}

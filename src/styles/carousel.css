@@ -1,0 +1,48 @@
+.carousel {
+  background-color: var(--bg-secondary);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  aspect-ratio: 1.27 / 1;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item:hover {
+  cursor: pointer;
+}
+
+.carousel .caption {
+  padding-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2vw;
+}
+
+.caption h5 {
+  font-family: "Space Mono", monospace;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .carousel .caption {
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+  }
+
+  .caption h5 {
+    font-size: 1rem;
+  }
+}
